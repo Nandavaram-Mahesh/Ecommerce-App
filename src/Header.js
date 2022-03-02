@@ -15,9 +15,9 @@ const Header=()=> {
   return( 
                   
             <div className="header">
-                    <Link to='/'>
             {/* Logo */}
-                    <img className="header-logo" src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo'/>
+                    <Link to='/'>
+                        <img className="header-logo" src='https://pngimg.com/uploads/amazon/amazon_PNG11.png' alt='amazon-logo'/>
                     </Link>
             {/* SearchBar */}
                 <div className="header-search">
@@ -51,14 +51,16 @@ const Header=()=> {
                        </span>
                     </div>
                     </Link>
-                    <div className="header-options">
-                       <span className="header-optionLineOne">
-                           Your
-                       </span>
-                       <span className="header-optionLineTwo">
-                           Prime
-                       </span>
-                    </div>
+                    <Link to='/prime'>
+                        <div className="header-options">
+                            <span className="header-optionLineOne">
+                                Amazon Prime
+                            </span>
+                            <span className="header-optionLineTwo">
+                                Videos
+                            </span>
+                        </div>
+                    </Link>
                 </div>
                 <Link to='/checkout'>
                 <div className="header-BasketContainer">
